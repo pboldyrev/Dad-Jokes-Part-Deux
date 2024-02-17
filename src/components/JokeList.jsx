@@ -93,7 +93,7 @@ const JokeList = () => {
   return (
     <>
       <div className="row g-0 justify-content-center py-3">
-        <div className="col-6">
+        <div className="col-11 col-sm-10 col-md-7 col-lg-6">
           <Toolbar
             isDeleteDisabled={isDeleteDisabled}
             isFetchDisabled={isFetchDisabled}
