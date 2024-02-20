@@ -76,7 +76,11 @@ const JokeList = () => {
   };
 
   useEffect(() => {
-    onFetchJokes();
+    let unsubscribed = false;
+    if (!unsubscribed) {
+      onFetchJokes();
+    }
+    return () => (unsubscribed = true);
   }, []);
 
   useEffect(() => {
